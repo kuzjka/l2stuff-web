@@ -1,0 +1,21 @@
+<h3>Manor calculation</h3>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>Fruit</th>
+    <th>Reward</th>
+    <th>Price</th>
+    <th>You have</th>
+    <th>You sell</th>
+    <th>You receive</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr app-manor-row *ngFor="let manor of rows" [manor]="manor"></tr>
+  </tbody>
+</table>
+
+<button class="btn btn-primary" type="button" (click)="addRow()">
+  Add row
+</button>

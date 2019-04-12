@@ -1,0 +1,37 @@
+<td [formGroup]="form">
+  <div class="form-group">
+    <select class="form-control" formControlName="fruit">
+      <option [value]="null">-- select --</option>
+      <option *ngFor="let fr of ALL_FRUITS; let i = index" [value]="i">{{ fr.name }}</option>
+    </select>
+  </div>
+</td>
+<td [formGroup]="form">
+  <div class="form-group">
+    <select class="form-control" formControlName="reward">
+      <option [value]="null">-- select --</option>
+      <option value="TYPE_1">{{ rew1Txt }}</option>
+      <option value="TYPE_2">{{ rew2Txt }}</option>
+    </select>
+  </div>
+</td>
+<td [formGroup]="form">
+  <div class="form-group">
+    <input type="number" formControlName="price" [value]="manor.fruit ? manor.fruit.maxPrice : 0">
+  </div>
+</td>
+<td [formGroup]="form">
+  <div class="form-group">
+    <input type="number" formControlName="youHave">
+  </div>
+</td>
+<td>
+  <div class="form-group">
+    <input readonly type="number" [value]="manor.youSell">
+  </div>
+</td>
+<td>
+  <div class="form-group">
+    <input readonly type="number" [value]="manor.resources">
+  </div>
+</td>

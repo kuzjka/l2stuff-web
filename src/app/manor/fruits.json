@@ -1,0 +1,298 @@
+[ {
+  "name" : "Dark Coda",
+  "maxPrice" : 500,
+  "reward1" : {
+    "name" : "Stem",
+    "price" : 100
+  },
+  "reward2" : {
+    "name" : "Braided Hemp",
+    "price" : 500
+  }
+}, {
+  "name" : "Red Coda",
+  "maxPrice" : 500,
+  "reward1" : {
+    "name" : "Varnish",
+    "price" : 200
+  },
+  "reward2" : {
+    "name" : "Cokes",
+    "price" : 1200
+  }
+}, {
+  "name" : "Chilly Coda",
+  "maxPrice" : 500,
+  "reward1" : {
+    "name" : "Suede",
+    "price" : 300
+  },
+  "reward2" : {
+    "name" : "Oriharukon Ore",
+    "price" : 3000
+  }
+}, {
+  "name" : "Blue Coda",
+  "maxPrice" : 1000,
+  "reward1" : {
+    "name" : "Animal Skin",
+    "price" : 150
+  },
+  "reward2" : {
+    "name" : "Crafted Leather",
+    "price" : 5700
+  }
+}, {
+  "name" : "Golden Coda",
+  "maxPrice" : 2000,
+  "reward1" : {
+    "name" : "Thread",
+    "price" : 100
+  },
+  "reward2" : {
+    "name" : "Mithril Ore",
+    "price" : 1000
+  }
+}, {
+  "name" : "Lute Coda",
+  "maxPrice" : 3000,
+  "reward1" : {
+    "name" : "Iron Ore",
+    "price" : 200
+  },
+  "reward2" : {
+    "name" : "Metallic Fiber",
+    "price" : 700
+  }
+}, {
+  "name" : "Desert Coda",
+  "maxPrice" : 2000,
+  "reward1" : {
+    "name" : "Coal",
+    "price" : 200
+  },
+  "reward2" : {
+    "name" : "Adamantite Nugget",
+    "price" : 5000
+  }
+}, {
+  "name" : "Red Cobol",
+  "maxPrice" : 2000,
+  "reward1" : {
+    "name" : "Charcoal",
+    "price" : 200
+  },
+  "reward2" : {
+    "name" : "Enria",
+    "price" : 12000
+  }
+}, {
+  "name" : "Chilly Cobol",
+  "maxPrice" : 2500,
+  "reward1" : {
+    "name" : "Animal Bone",
+    "price" : 150
+  },
+  "reward2" : {
+    "name" : "Steel",
+    "price" : 2000
+  }
+}, {
+  "name" : "Blue Cobol",
+  "maxPrice" : 5000,
+  "reward1" : {
+    "name" : "Silver Nugget",
+    "price" : 500
+  },
+  "reward2" : {
+    "name" : "Thons",
+    "price" : 6000
+  }
+}, {
+  "name" : "Thorn Cobol",
+  "maxPrice" : 5000,
+  "reward1" : {
+    "name" : "Stem",
+    "price" : 100
+  },
+  "reward2" : {
+    "name" : "Metallic Thread",
+    "price" : 2000
+  }
+}, {
+  "name" : "Golden Cobol",
+  "maxPrice" : 5000,
+  "reward1" : {
+    "name" : "Varnish",
+    "price" : 200
+  },
+  "reward2" : {
+    "name" : "Mold Glue",
+    "price" : 6000
+  }
+}, {
+  "name" : "Great Cobol",
+  "maxPrice" : 5000,
+  "reward1" : {
+    "name" : "Suede",
+    "price" : 300
+  },
+  "reward2" : {
+    "name" : "High Grade Suede",
+    "price" : 2400
+  }
+}, {
+  "name" : "Red Codran",
+  "maxPrice" : 4000,
+  "reward1" : {
+    "name" : "Animal Skin",
+    "price" : 150
+  },
+  "reward2" : {
+    "name" : "Asofe",
+    "price" : 6000
+  }
+}, {
+  "name" : "Sea Codran",
+  "maxPrice" : 5000,
+  "reward1" : {
+    "name" : "Thread",
+    "price" : 100
+  },
+  "reward2" : {
+    "name" : "Cord",
+    "price" : 325
+  }
+}, {
+  "name" : "Chilly Codran",
+  "maxPrice" : 4000,
+  "reward1" : {
+    "name" : "Iron Ore",
+    "price" : 200
+  },
+  "reward2" : {
+    "name" : "Mold Hardener",
+    "price" : 23000
+  }
+}, {
+  "name" : "Blue Codran",
+  "maxPrice" : 5000,
+  "reward1" : {
+    "name" : "Coal",
+    "price" : 200
+  },
+  "reward2" : {
+    "name" : "Leather",
+    "price" : 900
+  }
+}, {
+  "name" : "Blue Coba",
+  "maxPrice" : 12500,
+  "reward1" : {
+    "name" : "Crafted Leather",
+    "price" : 5700
+  },
+  "reward2" : {
+    "name" : "Mold Glue",
+    "price" : 6000
+  }
+}, {
+  "name" : "Twin Codran",
+  "maxPrice" : 5000,
+  "reward1" : {
+    "name" : "Charcoal",
+    "price" : 200
+  },
+  "reward2" : {
+    "name" : "Mold Lubricant",
+    "price" : 10000
+  }
+}, {
+  "name" : "Great Codran",
+  "maxPrice" : 7500,
+  "reward1" : {
+    "name" : "Animal Bone",
+    "price" : 150
+  },
+  "reward2" : {
+    "name" : "Coarse Bone Powder",
+    "price" : 1500
+  }
+}, {
+  "name" : "Desert Codran",
+  "maxPrice" : 10000,
+  "reward1" : {
+    "name" : "Silver Nugget",
+    "price" : 500
+  },
+  "reward2" : {
+    "name" : "Durable Metal Plate",
+    "price" : 15000
+  }
+}, {
+  "name" : "Red Coba",
+  "maxPrice" : 15000,
+  "reward1" : {
+    "name" : "Synthetic Cokes",
+    "price" : 6600
+  },
+  "reward2" : {
+    "name" : "Mold Lubricant",
+    "price" : 10000
+  }
+}, {
+  "name" : "Gold Coba",
+  "maxPrice" : 17500,
+  "reward1" : {
+    "name" : "Varnish Of Purity",
+    "price" : 8100
+  },
+  "reward2" : {
+    "name" : "Mold Hardener",
+    "price" : 23000
+  }
+}, {
+  "name" : "Desert Coba",
+  "maxPrice" : 20000,
+  "reward1" : {
+    "name" : "Asofe",
+    "price" : 6000
+  },
+  "reward2" : {
+    "name" : "Mithril Alloy",
+    "price" : 13100
+  }
+}, {
+  "name" : "Sea Coba",
+  "maxPrice" : 22500,
+  "reward1" : {
+    "name" : "Thons",
+    "price" : 6000
+  },
+  "reward2" : {
+    "name" : "Enria",
+    "price" : 12000
+  }
+}, {
+  "name" : "Twin Coba",
+  "maxPrice" : 25000,
+  "reward1" : {
+    "name" : "High Grade Suede",
+    "price" : 2400
+  },
+  "reward2" : {
+    "name" : "Oriharukon",
+    "price" : 24600
+  }
+}, {
+  "name" : "King Coba",
+  "maxPrice" : 27500,
+  "reward1" : {
+    "name" : "Metallic Thread",
+    "price" : 2000
+  },
+  "reward2" : {
+    "name" : "Durable Metal Plate",
+    "price" : 15000
+  }
+} ]
