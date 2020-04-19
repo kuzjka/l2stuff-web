@@ -19,18 +19,4 @@ export class FruitManor {
   youHave: number;
   youSell: number;
   resources: number;
-
-  // constructor(fruit?: Fruit) {
-  //   this.fruit = fruit;
-  //   if (fruit) {
-  //     this.reward = RewardType.TYPE_1;
-  //     this.price = fruit.maxPrice;
-  //   } else {
-  //     this.reward = null;
-  //     this.price = 0;
-  //   }
-  //   this.youHave = 0;
-  //   this.youSell = 0;
-  //   this.resources = 0;
-  // }
 }

@@ -1,0 +1,6 @@
+<div class="ml-2">
+  <img [src]="icon" class="mr-1"/>{{ material.name }} : {{ material.available }} / {{ material.required }}
+  <ng-container *ngIf="material.ingredients">
+    <app-craft-material *ngFor="let m of material.ingredients" [indent]="indent + 1" [material]="m"></app-craft-material>
+  </ng-container>
+</div>

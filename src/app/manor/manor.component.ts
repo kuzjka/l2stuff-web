@@ -10,7 +10,7 @@ import * as FRUITS from './fruits.json';
 export class ManorComponent implements OnInit {
   private ALL_FRUITS = FRUITS;
 
-  private rows: FruitManor[] = [
+  rows: FruitManor[] = [
     new FruitManor()
   ];
 

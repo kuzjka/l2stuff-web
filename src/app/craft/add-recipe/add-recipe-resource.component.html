@@ -1,0 +1,13 @@
+<td [formGroup]="form">
+  <div class="form-group">
+    <select class="form-control" formControlName="name">
+      <option [value]="null">-- select --</option>
+      <option *ngFor="let res of resourceNames" [value]="res">{{ res }}</option>
+    </select>
+  </div>
+</td>
+<td [formGroup]="form">
+  <div class="form-group">
+    <input type="number" formControlName="amount">
+  </div>
+</td>

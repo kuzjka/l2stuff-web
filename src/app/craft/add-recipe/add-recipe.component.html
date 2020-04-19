@@ -1,0 +1,24 @@
+<h3>Add recipe</h3>
+
+<label for="recipe_name">Recipe Name</label>
+<input id="recipe_name" type="text" (change)="onNameChanged($event)" [value]="recipe.name"/>
+
+<div class="row m-1">
+  <div class="col-sm-6">
+    <table>
+      <tbody>
+      <tr app-add-recipe-resource *ngFor="let res of recipe.resources" [stock]="res"></tr>
+      </tbody>
+    </table>
+
+    <button class="btn btn-primary btn-sm" type="button" (click)="addResource()">Add Resource</button>
+  </div>
+
+  <div class="col-sm-6">
+    <app-add-recipe-consumable [consumable]="recipe.gemstones" name="Gemstones"></app-add-recipe-consumable>
+    <app-add-recipe-consumable [consumable]="recipe.crystals" name="Crystals"></app-add-recipe-consumable>
+  </div>
+</div>
+
+<button class="btn btn-primary" type="button" (click)="addRecipe()">Add</button>
+<button class="btn btn-outline-primary ml-1" type="button" (click)="reset()">Reset</button>

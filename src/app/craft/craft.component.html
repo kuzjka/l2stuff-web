@@ -1,0 +1,25 @@
+<h1>Craft</h1>
+
+<div class="pane">
+  <h3>Stocks</h3>
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let group of stocks">
+      <table>
+        <tbody>
+        <tr app-craft-available *ngFor="let stock of group" [stock]="stock" (amountChanged)="calculate()"></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="pane">
+  <app-add-recipe [recipeBook]="recipeBook" (newRecipe)="onNewRecipe($event)"></app-add-recipe>
+</div>
+
+<div class="pane">
+  <h3>Items</h3>
+  <div cdkDropList class="pane" (cdkDropListDropped)="drop($event)">
+    <app-craft-item cdkDrag *ngFor="let it of items; let i = index" [item]="it" (delete)="deleteCraftItem(i)"></app-craft-item>
+  </div>
+</div>

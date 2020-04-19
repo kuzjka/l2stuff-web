@@ -1,0 +1,344 @@
+[{
+  "name": "Animal Bone"
+}, {
+  "name": "Animal Skin"
+}, {
+  "name": "Braided Hemp",
+  "craft": [{
+    "res": "Stem",
+    "amount": 5
+  }]
+}, {
+  "name": "Coal"
+}, {
+  "name": "Iron Ore"
+}, {
+  "name": "Steel",
+  "craft": [{
+    "res": "Varnish",
+    "amount": 5
+  }, {
+    "res": "Iron Ore",
+    "amount": 5
+  }]
+}, {
+  "name": "Steel Mold",
+  "craft": [{
+    "res": "Iron Ore",
+    "amount": 5
+  }, {
+    "res": "Coal",
+    "amount": 5
+  }, {
+    "res": "Braided Hemp",
+    "amount": 5
+  }]
+}, {
+  "name": "Stem"
+}, {
+  "name": "Suede"
+}, {
+  "name": "Thread"
+}, {
+  "name": "Varnish"
+}, {
+  "name": "Charcoal"
+}, {
+  "name": "Coarse Bone Powder",
+  "craft": [{
+    "res": "Animal Bone",
+    "amount": 10
+  }]
+}, {
+  "name": "Cokes",
+  "craft": [{
+    "res": "Coal",
+    "amount": 3
+  }, {
+    "res": "Charcoal",
+    "amount": 3
+  }]
+}, {
+  "name": "Cord",
+  "craft": [{
+    "res": "Thread",
+    "amount": 25
+  }, {
+    "res": "Steel",
+    "amount": 2
+  }]
+}, {
+  "name": "High Grade Suede",
+  "craft": [{
+    "res": "Suede",
+    "amount": 3
+  }, {
+    "res": "Coars Bone Powder",
+    "amount": 1
+  }]
+}, {
+  "name": "Leather",
+  "craft": [{
+    "res": "Animal Skin",
+    "amount": 6
+  }]
+}, {
+  "name": "Silver Mold",
+  "craft": [{
+    "res": "Silver Nugget",
+    "amount": 10
+  }, {
+    "res": "Braided Hemp",
+    "amount": 5
+  }, {
+    "res": "Cokes",
+    "amount": 5
+  }]
+}, {
+  "name": "Silver Nugget"
+}, {
+  "name": "Adamantite Nugget"
+}, {
+  "name": "Artisan's Frame",
+  "craft": [{
+    "res": "Adamantite Nugget",
+    "amount": 10
+  }, {
+    "res": "Steel Mold",
+    "amount": 1
+  }, {
+    "res": "Varnish of Purity",
+    "amount": 5
+  }]
+}, {
+  "name": "Blacksmith's Frame",
+  "craft": [{
+    "res": "Mithril Ore",
+    "amount": 10
+  }, {
+    "res": "Silver Mold",
+    "amount": 1
+  }, {
+    "res": "Varnish of Purity",
+    "amount": 5
+  }]
+}, {
+  "name": "Compound Braid",
+  "craft": [{
+    "res": "Thread",
+    "amount": 5
+  }, {
+    "res": "Braided Hemp",
+    "amount": 5
+  }]
+}, {
+  "name": "Crafted Leather",
+  "craft": [{
+    "res": "Coal",
+    "amount": 4
+  }, {
+    "res": "Leather",
+    "amount": 4
+  }, {
+    "res": "Cord",
+    "amount": 4
+  }]
+}, {
+  "name": "Metal Hardener",
+  "craft": [{
+    "res": "Stem",
+    "amount": 10
+  }, {
+    "res": "Varnish",
+    "amount": 10
+  }, {
+    "res": "Iron Ore",
+    "amount": 10
+  }]
+}, {
+  "name": "Metallic Fiber",
+  "craft": [{
+    "res": "Silver Nugget",
+    "amount": 15
+  }, {
+    "res": "Cord",
+    "amount": 20
+  }]
+}, {
+  "name": "Mithril Alloy",
+  "craft": [{
+    "res": "Mithril Ore",
+    "amount": 1
+  }, {
+    "res": "Steel",
+    "amount": 2
+  }, {
+    "res": "Varnish of Purity",
+    "amount": 1
+  }]
+}, {
+  "name": "Mithril Ore"
+}, {
+  "name": "Oriharukon",
+  "craft": [{
+    "res": "Silver Nugget",
+    "amount": 12
+  }, {
+    "res": "Oriharukon Ore",
+    "amount": 4
+  }, {
+    "res": "Synthetic Cokes",
+    "amount": 1
+  }]
+}, {
+  "name": "Oriharukon Ore"
+}, {
+  "name": "Stone of Purity"
+}, {
+  "name": "Synthetic Cokes",
+  "craft": [{
+    "res": "Oriharukon Ore",
+    "amount": 1
+  }, {
+    "res": "Cokes",
+    "amount": 3
+  }]
+}, {
+  "name": "Varnish of Purity",
+  "craft": [{
+    "res": "Varnish",
+    "amount": 3
+  }, {
+    "res": "Stone of Purity",
+    "amount": 1
+  }, {
+    "res": "Coarse Bone Powder",
+    "amount": 3
+  }]
+}, {
+  "name": "Asofe"
+}, {
+  "name": "Craftsman Mold",
+  "craft": [{
+    "res": "Artisan's Frame",
+    "amount": 2
+  }, {
+    "res": "Mold Hardener",
+    "amount": 20
+  }, {
+    "res": "Enria",
+    "amount": 5
+  }]
+}, {
+  "name": "Enria"
+}, {
+  "name": "Maestro Anvil Lock",
+  "craft": [{
+    "res": "Synthetic Cokes",
+    "amount": 4
+  }, {
+    "res": "Mold Glue",
+    "amount": 4
+  }, {
+    "res": "Mold Lubricant",
+    "amount": 4
+  }]
+}, {
+  "name": "Maestro Holder",
+  "craft": [{
+    "res": "Varnish of Purity",
+    "amount": 10
+  }, {
+    "res": "Mold Lubricant",
+    "amount": 10
+  }, {
+    "res": "Mold Hardener",
+    "amount": 10
+  }]
+}, {
+  "name": "Maestro Mold",
+  "craft": [{
+    "res": "Blacksmith's Frame",
+    "amount": 1
+  }, {
+    "res": "Mold Glue",
+    "amount": 10
+  }, {
+    "res": "Asofe",
+    "amount": 5
+  }]
+}, {
+  "name": "Mold Glue"
+}, {
+  "name": "Mold Hardener"
+}, {
+  "name": "Mold Lubricant"
+}, {
+  "name": "Thons"
+}, {
+  "name": "Arcsmith's Anvil",
+  "craft": [{
+    "res": "Mold Lubricant",
+    "amount": 20
+  }, {
+    "res": "Thons",
+    "amount": 10
+  }, {
+    "res": "Maestro Anvil Lock",
+    "amount": 3
+  }]
+}, {
+  "name": "Durable Metal Plate",
+  "craft": [{
+    "res": "Mithril Ore",
+    "amount": 5
+  }, {
+    "res": "Metallic Thread",
+    "amount": 5
+  }]
+}, {
+  "name": "Metallic Thread",
+  "craft": [{
+    "res": "Thread",
+    "amount": 10
+  }, {
+    "res": "Iron Ore",
+    "amount": 5
+  }]
+}, {
+  "name": "Reorin's Mold",
+  "craft": [{
+    "res": "Adamantite Nugget",
+    "amount": 15
+  }, {
+    "res": "Cord",
+    "amount": 40
+  }, {
+    "res": "Durable Metal Plate",
+    "amount": 10
+  }]
+}, {
+  "name": "Warsmith's Holder",
+  "craft": [{
+    "res": "Thread",
+    "amount": 20
+  }, {
+    "res": "Mold Glue",
+    "amount": 10
+  }, {
+    "res": "Maestro Holder",
+    "amount": 2
+  }]
+}, {
+  "name": "Warsmith's Mold",
+  "craft": [{
+    "res": "Artisan's Frame",
+    "amount": 1
+  }, {
+    "res": "Mold Hardener",
+    "amount": 10
+  }, {
+    "res": "Enria",
+    "amount": 5
+  }]
+}]

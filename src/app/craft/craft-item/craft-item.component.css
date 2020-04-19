@@ -1,0 +1,7 @@
+.craft-item {
+  margin: 5px 2px;
+  border: gray 1px solid;
+  border-radius: 5px;
+  background-color: lightgray;
+  padding: 2px;
+}
