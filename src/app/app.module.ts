@@ -2,20 +2,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {RouterModule, Routes} from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { ManorComponent } from './manor/manor.component';
 import { FishingComponent } from './fishing/fishing.component';
 import { ManorRowComponent } from './manor/manor-row.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CraftComponent } from './craft/craft.component';
 import { CraftAvailableComponent } from './craft/craft-available.component';
 import { AddRecipeComponent } from './craft/add-recipe/add-recipe.component';
-import { AddRecipeResourceComponent } from './craft/add-recipe/add-recipe-resource.component';
-import { AddRecipeConsumableComponent } from './craft/add-recipe/add-recipe-consumable.component';
 import { CraftItemComponent } from './craft/craft-item/craft-item.component';
 import { CraftMaterialComponent } from './craft/craft-item/craft-material.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {DragDropModule} from '@angular/cdk/drag-drop';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatInputModule } from '@angular/material/input';
 
 const routes: Routes = [
   { path: 'manor', component: ManorComponent },
@@ -33,8 +33,6 @@ const routes: Routes = [
     CraftComponent,
     CraftAvailableComponent,
     AddRecipeComponent,
-    AddRecipeResourceComponent,
-    AddRecipeConsumableComponent,
     CraftItemComponent,
     CraftMaterialComponent
   ],
@@ -43,7 +41,9 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    DragDropModule
+    DragDropModule,
+    MatAutocompleteModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

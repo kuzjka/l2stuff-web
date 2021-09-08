@@ -17,8 +17,10 @@
     </button>
   </h6>
   <ng-container *ngIf="expanded">
-    <p>Gem {{ item.recipe.gemstones.grade }}: {{ item.recipe.gemstones.amount }}
-      {{ item.recipe.crystals.grade }}x: {{ item.recipe.crystals.amount}}</p>
+    <p>
+      <span *ngIf="item.recipe.gemstones">Gem {{ item.recipe.gemstones.grade }}: {{ item.recipe.gemstones.amount }}</span>
+      <span *ngIf="item.recipe.gemstones">{{ item.recipe.crystals.grade }}x: {{ item.recipe.crystals.amount}}</span>
+    </p>
     <app-craft-material *ngFor="let m of item.materials" [indent]="0" [material]="m"></app-craft-material>
   </ng-container>
 </div>

@@ -1,4 +1,4 @@
-import {Resource, ResStock} from './craft.model';
+import {Resource, ResStock, ResStockEntry} from './craft.model';
 
 export type Grade = 'D' | 'C' | 'B' | 'A' | 'S';
 
@@ -15,15 +15,15 @@ export class Consumable {
 export class Recipe {
   name: string;
   resources: ResStock[];
-  crystals: Consumable;
-  gemstones: Consumable;
+  crystals?: Consumable;
+  gemstones?: Consumable;
+}
 
-  constructor() {
-    this.name = '';
-    this.resources = [new ResStock()];
-    this.crystals = new Consumable();
-    this.gemstones = new Consumable();
-  }
+export class RecipeEntry {
+  name: string;
+  resources: ResStockEntry[];
+  crystals?: Consumable;
+  gemstones?: Consumable;
 }
 
 export class CraftItem {

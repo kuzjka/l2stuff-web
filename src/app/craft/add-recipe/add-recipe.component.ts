@@ -1,7 +1,9 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {FormGroup} from '@angular/forms';
+import {FormBuilder, FormGroup} from '@angular/forms';
 import {Recipe} from '../model/recipe.model';
 import {ResStock} from '../model/craft.model';
+import {RecipeService} from '../recipe.service';
+import {switchMap} from 'rxjs/operators';
 
 @Component({
   selector: 'app-add-recipe',
@@ -9,46 +11,40 @@ import {ResStock} from '../model/craft.model';
   styleUrls: ['./add-recipe.component.css']
 })
 export class AddRecipeComponent implements OnInit {
-  bookRecipe: Recipe;
-  recipe: Recipe;
+  autocompleteNames: string[];
+  recipeForm: FormGroup;
 
   @Output()
   newRecipe: EventEmitter<Recipe>;
 
-  @Input()
-  recipeBook: Map<string, Recipe>;
-
-  constructor() {
+  constructor(private recipeService: RecipeService, private fb: FormBuilder) {
     this.newRecipe = new EventEmitter<Recipe>();
-    this.reset();
+    this.autocompleteNames = [];
   }
 
   ngOnInit() {
-    console.log('recipe book size: ' + this.recipeBook.size);
-  }
+    this.recipeForm = this.fb.group({
+      recipeName: null
+    });
 
-  onNameChanged(event: any): void {
-    this.recipe.name = event.target.value;
-  }
+    this.recipeForm
+      .get('recipeName')
+      .valueChanges
+      .subscribe(v => this.autocompleteNames = this.recipeService.getNamesForPrefix(v));
 
-  addResource(): void {
-    this.recipe.resources.push(new ResStock());
   }
 
   addRecipe(): void {
-    if (this.recipe.resources.some(r => !r.res)) {
-      this.showError('Resources not set');
+    const recipe = this.recipeService.getRecipe(this.recipeForm.get('recipeName').value);
+    if (!recipe) {
+      this.showError('Unknown recipe ' + recipe);
       return;
     }
-    this.newRecipe.emit(this.recipe);
-    this.reset();
+    this.newRecipe.emit(recipe);
+    this.recipeForm.reset();
   }
 
   showError(message: string): void {
     console.error(message);
-  }
-
-  reset(): void {
-    this.recipe = new Recipe();
   }
 }
