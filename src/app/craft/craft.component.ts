@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ResStock} from './model/craft.model';
-import {CraftItem, Material, Recipe} from './model/recipe.model';
+import {Consumable, CraftItem, Grade, Material, Recipe} from './model/recipe.model';
 import {ResService} from './res.service';
 import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 import {CraftStorageService} from './craft-storage.service';
@@ -16,6 +16,8 @@ export class CraftComponent implements OnInit {
   private items: CraftItem[];
   private data: CraftData;
   private recipeBook: Map<string, Recipe>;
+  private crystals: Consumable[];
+  private gemstones: Consumable[];
 
   constructor(private resService: ResService, private storageService: CraftStorageService) {
     this.data = storageService.getCraftData();
@@ -52,13 +54,19 @@ export class CraftComponent implements OnInit {
 
   calculate(): void {
     const remaining: Map<string, number> = new Map<string, number>();
+    const crystals = new ConsumableCounter();
+    const gemstones = new ConsumableCounter();
     this.stocks.forEach(st => st.forEach(s => remaining.set(s.res.name, s.amount)));
     this.items.forEach(i => {
+      crystals.add(i.recipe.crystals);
+      gemstones.add(i.recipe.gemstones);
       i.materials = [];
       i.recipe.resources.forEach(r => {
         i.materials.push(this.getMaterial(r, remaining));
       });
     });
+    this.crystals = crystals.get();
+    this.gemstones = gemstones.get();
     this.saveData();
   }
 
@@ -96,5 +104,31 @@ export class CraftComponent implements OnInit {
     this.data.recipes = this.items.map(i => i.recipe);
     this.data.recipeBook = Array.from(this.recipeBook.values());
     this.storageService.saveCraftData(this.data);
+  }
+}
+
+class ConsumableCounter {
+  private counters;
+
+  private grades: Grade[] = ['D', 'C', 'B', 'A', 'S'];
+
+  constructor() {
+    this.counters = {};
+    this.grades.forEach(item => {
+      this.counters[item] = 0;
+    });
+  }
+
+  add(consumable?: Consumable) {
+    if (consumable) {
+      this.counters[consumable.grade] += consumable.amount;
+    }
+  }
+
+  get(): Consumable[] {
+    return this.grades.map(g => ({
+      grade: g,
+      amount: this.counters[g]
+    })).filter(c => c.amount > 0);
   }
 }

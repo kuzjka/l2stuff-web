@@ -19,6 +19,10 @@
 
 <div class="pane">
   <h3>Items</h3>
+  <p>
+    <span *ngFor="let g of this.gemstones" class="comma-delimited">{{ g.amount }} Gem {{ g.grade }}</span>
+    <span *ngFor="let c of this.crystals" class="comma-delimited">{{ c.amount}} {{ c.grade }}x</span>
+  </p>
   <div cdkDropList class="pane" (cdkDropListDropped)="drop($event)">
     <app-craft-item cdkDrag *ngFor="let it of items; let i = index" [item]="it" (delete)="deleteCraftItem(i)"></app-craft-item>
   </div>

@@ -18,8 +18,8 @@
   </h6>
   <ng-container *ngIf="expanded">
     <p>
-      <span *ngIf="item.recipe.gemstones">Gem {{ item.recipe.gemstones.grade }}: {{ item.recipe.gemstones.amount }}</span>
-      <span *ngIf="item.recipe.gemstones">{{ item.recipe.crystals.grade }}x: {{ item.recipe.crystals.amount}}</span>
+      <span *ngIf="item.recipe.gemstones" class="comma-delimited">{{ item.recipe.gemstones.amount }} Gem {{ item.recipe.gemstones.grade }}</span>
+      <span *ngIf="item.recipe.crystals" class="comma-delimited">{{ item.recipe.crystals.amount}} {{ item.recipe.crystals.grade }}x</span>
     </p>
     <app-craft-material *ngFor="let m of item.materials" [indent]="0" [material]="m"></app-craft-material>
   </ng-container>
